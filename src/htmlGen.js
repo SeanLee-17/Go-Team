@@ -5,7 +5,7 @@ const managerMakerCard = (manager) => {
     <p>${manager.getRole()}</p>
     <div class="card-body">
       <ul class="list-group list-group-flush">
-        <li class="list-group-item">ID: ${manager.getID()}</li>
+        <li class="list-group-item">ID: ${manager.getId()}</li>
         <li class="list-group-item">Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</li>
         <li class="list-group-item">Office Number: ${manager.getOfficeNumber()}</li>
       </ul>
@@ -21,7 +21,7 @@ const engineerEngineCard = (engineer) => {
     <p>${engineer.getRole()}</p>
     <div class="card-body">
       <ul class="list-group list-group-flush">
-        <li class="list-group-item">ID: ${engineer.getID()}</li>
+        <li class="list-group-item">ID: ${engineer.getId()}</li>
         <li class="list-group-item">Email: <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</li>
         <li class="list-group-item">Office Number: ${engineer.getGithub()}</li>
       </ul>
@@ -37,7 +37,7 @@ const internInterfaceCard = (intern) => {
     <p>${intern.getRole()}</p>
     <div class="card-body">
       <ul class="list-group list-group-flush">
-        <li class="list-group-item">ID: ${intern.getID()}</li>
+        <li class="list-group-item">ID: ${intern.getId()}</li>
         <li class="list-group-item">Email: <a href="mailto:${intern.getEmail()}">${intern.getEmail()}</li>
         <li class="list-group-item">Office Number: ${intern.getSchool()}</li>
       </ul>

@@ -20,22 +20,22 @@ function init() {
         inquirer.prompt ([
             {
                 type: "input",
-                names: 'name',
+                name: 'name',
                 message: "What is your manager's name?",
             },
             {
                 type: "input",
-                names: 'id',
+                name: 'id',
                 message: "What is your manager's id?",
             },
             {
                 type: "input",
-                names: 'email',
+                name: 'email',
                 message: "What is your email?",
             },
             {
                 type: "input",
-                names: 'officeNumber',
+                name: 'officeNumber',
                 message: "What is the office number?",
             },
         ])
@@ -51,7 +51,7 @@ function init() {
         inquirer.prompt([
             {
                 type: "list",
-                names: 'freshMeat',
+                name: 'freshMeat',
                 message: "Who you like to hire someone?",
                 choices: ['Engineer','Intern',"Nah"]
             },
@@ -72,22 +72,22 @@ function init() {
         inquirer.prompt ([
             {
                 type: "input",
-                names: 'name',
+                name: 'name',
                 message: "What is your engineer's name?",
             },
             {
                 type: "input",
-                names: 'id',
+                name: 'id',
                 message: "What is your engineer's id?",
             },
             {
                 type: "input",
-                names: 'email',
+                name: 'email',
                 message: "What is your email?",
             },
             {
                 type: "input",
-                names: 'github',
+                name: 'github',
                 message: "What is your github?",
             },
         ])
@@ -102,22 +102,22 @@ function init() {
         inquirer.prompt ([
             {
                 type: "input",
-                names: 'name',
+                name: 'name',
                 message: "What is your intern's name?",
             },
             {
                 type: "input",
-                names: 'id',
+                name: 'id',
                 message: "What is your intern's id?",
             },
             {
                 type: "input",
-                names: 'email',
+                name: 'email',
                 message: "What is your email?",
             },
             {
                 type: "input",
-                names: 'school',
+                name: 'school',
                 message: "What is your school?",
             },
         ])
@@ -129,7 +129,7 @@ function init() {
 
     }
     function generateHtml(){
-        fs.writeFile("/.dist/index.html", vanillaHtml(theSquad), (err) => {
+        fs.writeFile("./dist/index.html", vanillaHtml(theSquad), (err) => {
             err ? console.log(err) : console.log("You did it!")
         })
     }
