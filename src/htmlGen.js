@@ -1,12 +1,12 @@
 const managerMakerCard = (manager) => {
     return `
-    <div class="card" style="width: 18rem;">
-    <h4 class="card-title">${manager.getName()}</h4>
-    <p>${manager.getRole()}</p>
+    <div class="card border border-5 border-danger mx-auto bg-danger bg-opacity-25" style="width: 18rem; margin: 5rem">
+    <h2 class="card-title text-center mt-3">${manager.getName()}</h4>
+    <p class="text-center">${manager.getRole()}</p>
     <div class="card-body">
       <ul class="list-group list-group-flush">
         <li class="list-group-item">ID: ${manager.getId()}</li>
-        <li class="list-group-item">Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</li>
+        <li class="list-group-item">Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></li>
         <li class="list-group-item">Office Number: ${manager.getOfficeNumber()}</li>
       </ul>
     </div>
@@ -16,13 +16,13 @@ const managerMakerCard = (manager) => {
 
 const engineerEngineCard = (engineer) => {
     return `
-    <div class="card" style="width: 18rem;">
-    <h4 class="card-title">${engineer.getName()}</h4>
-    <p>${engineer.getRole()}</p>
+    <div class="card border border-5 border-primary mx-auto bg-primary bg-opacity-25" style="width: 18rem; margin: 5rem">
+    <h2 class="card-title text-center mt-3">${engineer.getName()}</h4>
+    <p class="text-center">${engineer.getRole()}</p>
     <div class="card-body">
       <ul class="list-group list-group-flush">
         <li class="list-group-item">ID: ${engineer.getId()}</li>
-        <li class="list-group-item">Email: <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</li>
+        <li class="list-group-item">Email: <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></li>
         <li class="list-group-item">Office Number: ${engineer.getGithub()}</li>
       </ul>
     </div>
@@ -32,13 +32,13 @@ const engineerEngineCard = (engineer) => {
 
 const internInterfaceCard = (intern) => {
     return `
-    <div class="card" style="width: 18rem;">
-    <h4 class="card-title">${intern.getName()}</h4>
-    <p>${intern.getRole()}</p>
+    <div class="card border border-5 border-warning mx-auto bg-warning bg-opacity-25" style="width: 18rem; margin: 5rem">
+    <h2 class="card-title text-center mt-3">${intern.getName()}</h4>
+    <p class="text-center">${intern.getRole()}</p>
     <div class="card-body">
       <ul class="list-group list-group-flush">
         <li class="list-group-item">ID: ${intern.getId()}</li>
-        <li class="list-group-item">Email: <a href="mailto:${intern.getEmail()}">${intern.getEmail()}</li>
+        <li class="list-group-item">Email: <a href="mailto:${intern.getEmail()}">${intern.getEmail()}</a></li>
         <li class="list-group-item">Office Number: ${intern.getSchool()}</li>
       </ul>
     </div>
@@ -58,7 +58,7 @@ const vanillaHtml = (TheSquad) =>`
 </head>
 <body>
 <header>
-<div class="jumbotron jumbotron-fluid">
+<div class="jumbotron jumbotron-fluid bg-primary text-center bg-opacity-75 p-4 border">
     <h1>The Best Team</h1>
 </div>
 </header>
